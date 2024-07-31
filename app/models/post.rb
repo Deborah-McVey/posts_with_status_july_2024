@@ -1,7 +1,6 @@
 class Post < ApplicationRecord
     validates :title, presence: true
 
-
   STATUSES = [:draft, :published, :banned]
 
   validates :status, inclusion: { in: Post::STATUSES }

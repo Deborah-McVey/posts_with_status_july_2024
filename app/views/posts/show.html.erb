@@ -1,4 +1,4 @@
-<p><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
 <div class="jumbotron">
   <h1 class="display-4">
@@ -15,7 +15,7 @@
 
   <%= link_to 'Edit', edit_post_path(@post), class:"btn btn-secondary" %>
 
-<%= link_to 'Delete', @post, method: :destry, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+<%= link_to 'Delete', @post, method: :destroy, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
    
 <%= link_to 'Back', posts_path, class:"btn btn-dark" %>
 
